@@ -1,0 +1,39 @@
+{
+  "name": "genpark-hierarchical-swarm-task-delegation-governor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Hierarchical multi-agent swarm task decomposition, role assignment, and consensus barrier governor.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "multi-agent-swarms",
+  "tags": [
+    "crewai-flow",
+    "autogen",
+    "swarm-governor",
+    "task-delegation",
+    "multi-agent"
+  ],
+  "inputs": {
+    "root_objective": {
+      "type": "string"
+    },
+    "available_agent_pool": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "delegation_plan_id": {
+      "type": "string"
+    },
+    "agent_role_assignments": {
+      "type": "array"
+    },
+    "swarm_consensus_protocol": {
+      "type": "string"
+    },
+    "swarm_telemetry_dashboard_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
